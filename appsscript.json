@@ -1,0 +1,24 @@
+{
+  "timeZone": "Europe/London",
+  "dependencies": {
+    "libraries": [
+      {
+        "userSymbol": "bmUnitTester",
+        "version": "20",
+        "libraryId": "1zOlHMOpO89vqLPe5XpC-wzA9r5yaBkWt_qFjKqFNsIZtNJ-iUjBYDt-x"
+      },
+      {
+        "userSymbol": "bmIs",
+        "version": "1",
+        "libraryId": "1tFa7Gc68142wiiZaNmj0zA-ELDHh0q31eDXodeeCf1LxRR1LeSr3opAd"
+      },
+      {
+        "userSymbol": "bmFakeGasenum",
+        "version": "1",
+        "libraryId": "1n-YigdcvdSF-_lY61YR8a3ejbcgqNGiyKTxepcY13jEdNXUx9QNo5Miq"
+      }
+    ]
+  },
+  "exceptionLogging": "STACKDRIVER",
+  "runtimeVersion": "V8"
+}
