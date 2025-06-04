@@ -61,7 +61,8 @@ const testFakeGasEnum = () => {
     const keys = ["UNSUPPORTED", "RGB", "THEME"]
 
     // imitate the ColorType enum
-    const ColorType = newFakeGasenum(keys)
+  
+    const ColorType = SpreadsheetApp.ColorType
 
     t.is(ColorType.toString(), "UNSUPPORTED")
     t.is(ColorType.name(), "UNSUPPORTED")
