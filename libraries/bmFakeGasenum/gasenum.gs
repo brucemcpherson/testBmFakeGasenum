@@ -2,14 +2,14 @@
 //import { newCircularEnum } from './circularenum.js'
 
 
-
 /**
  * make an apps script style enum
+ * @param {boolean} safe whether to guard against invalid property accesses
  * @param {string[]} keys the valid key values for the enum
  * @param {string} [defaultKey] normally we use the 1st key in the keys array, but this would pick another by name
  * @return {CircularEnum}
  */
-const makeCircularEnum = (keys, defaultKey) => {
+const makeCircularEnum = (safe, keys, defaultKey) => {
 
   const isArray = (a) => Array.isArray(a)
   const isNonEmptyArray = (a) => isArray(a) && a.length > 0
@@ -33,10 +33,10 @@ const makeCircularEnum = (keys, defaultKey) => {
   defaultKey = keys[defaultIndex]
 
   // the base property (for Example ColorType)
-  const base = newCircularEnum(defaultKey, defaultIndex)
+  const base = newCircularEnum(safe, defaultKey, defaultIndex)
 
   // now one for each requried key
-  const enums = keys.map((key, i) => newCircularEnum(key, i))
+  const enums = keys.map((key, i) => newCircularEnum(safe, key, i))
 
   // add properties to base
   enums.forEach(e => base[e.name()] = e)
@@ -54,4 +54,5 @@ const makeCircularEnum = (keys, defaultKey) => {
  * @param {string} [defaultKey] normally we use the 1st key in the keys array, but this would pick another by name
  * @return {CircularEnum}
  */
-const newFakeGasenum = (keys, defaultKey) => makeCircularEnum(keys, defaultKey)
+const newFakeGasenum = (keys, defaultKey) => makeCircularEnum(false , keys, defaultKey)
+const newFakeGasenumSafe = (keys, defaultKey) => makeCircularEnum(true , keys, defaultKey)
