@@ -1,4 +1,5 @@
-var sindresorhus_is = (() => {
+
+const is = (() => {
 
   const typedArrayTypeNames = [
     'Int8Array',
@@ -495,6 +496,7 @@ var sindresorhus_is = (() => {
     if (!isString(value)) {
       return false;
     }
+   
     try {
       new URL(value); // eslint-disable-line no-new
       return true;
@@ -534,7 +536,7 @@ var sindresorhus_is = (() => {
     return method.call(values, predicate);
   }
   function typeErrorMessage(description, value) {
-    return `Expected value which is \`${description}\`, received value of type \`${is(value)}\`.`;
+    return `Expected value which is \`${description}\`, received value of type \`${Exports.is(value)}\`.`;
   }
   function unique(values) {
     // eslint-disable-next-line unicorn/prefer-spread
@@ -544,7 +546,7 @@ var sindresorhus_is = (() => {
   const orFormatter = new Intl.ListFormat('en', { style: 'long', type: 'disjunction' });
   function typeErrorMessageMultipleValues(expectedType, values) {
     const uniqueExpectedTypes = unique((isArray(expectedType) ? expectedType : [expectedType]).map(value => `\`${value}\``));
-    const uniqueValueTypes = unique(values.map(value => `\`${is(value)}\``));
+    const uniqueValueTypes = unique(values.map(value => `\`${Exports.is(value)}\``));
     return `Expected values which are ${orFormatter.format(uniqueExpectedTypes)}. Received values of type${uniqueValueTypes.length > 1 ? 's' : ''} ${andFormatter.format(uniqueValueTypes)}.`;
   }
   const assert = {
@@ -1209,6 +1211,7 @@ var sindresorhus_is = (() => {
     }
   }
   return Object.assign(detect, {
+    assert,
     all: isAll,
     any: isAny,
     array: isArray,
