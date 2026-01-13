@@ -3,10 +3,12 @@
 var Exports = {
 
   get is () {
-    return this.guard (sindresorhus_is)
+    return this.guard (is)
   },
 
-
+  get URL () {
+    return URL
+  },
 
   // used to trap access to unknown properties
   guard(target) {
