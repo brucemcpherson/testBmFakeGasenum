@@ -1,5 +1,5 @@
 # Google Apps Script Project: testBmFakeGasenum
-This repo (testBmFakeGasenum) was automatically updated on 1/13/2026, 11:40:35 AM by GasGit
+This repo (testBmFakeGasenum) was automatically updated on 1/14/2026, 10:25:42 AM by GasGit
 
 For more information on gasgit, see the [desktop liberation site](https://ramblings.mcpher.com/drive-sdk-and-github/migrategasgit/ "desktop liberation")
 
@@ -22,14 +22,14 @@ test| server_js
 *library*|*identifier*|*key*|*version*|*dev mode*|*source*|
 --- | --- | --- | --- | --- | --- 
 bmUnitTester| bmUnitTester|1zOlHMOpO89vqLPe5XpC-wzA9r5yaBkWt_qFjKqFNsIZtNJ-iUjBYDt-x|20|no|[here](libraries/bmUnitTester "library source")
-bmIs| bmIs|1tFa7Gc68142wiiZaNmj0zA-ELDHh0q31eDXodeeCf1LxRR1LeSr3opAd|5|no|[here](libraries/bmIs "library source")
-bmFakeGasenum| bmFakeGasenum|1n-YigdcvdSF-_lY61YR8a3ejbcgqNGiyKTxepcY13jEdNXUx9QNo5Miq|5|no|[here](libraries/bmFakeGasenum "library source")
+bmIs| bmIs|1tFa7Gc68142wiiZaNmj0zA-ELDHh0q31eDXodeeCf1LxRR1LeSr3opAd|1|no|[here](libraries/bmIs "library source")
+bmFakeGasenum| bmFakeGasenum|1n-YigdcvdSF-_lY61YR8a3ejbcgqNGiyKTxepcY13jEdNXUx9QNo5Miq|6|no|[here](libraries/bmFakeGasenum "library source")
 ### All dependencies and sub dependencies
 *library*|*identifier*|*key*|*version*|*dev mode*|*source*|
 --- | --- | --- | --- | --- | --- 
 bmUnitTester| bmUnitTester|1zOlHMOpO89vqLPe5XpC-wzA9r5yaBkWt_qFjKqFNsIZtNJ-iUjBYDt-x|20|no|[here](libraries/bmUnitTester "library source")
-bmIs| bmIs|1tFa7Gc68142wiiZaNmj0zA-ELDHh0q31eDXodeeCf1LxRR1LeSr3opAd|5|no|[here](libraries/bmIs "library source")
-bmFakeGasenum| bmFakeGasenum|1n-YigdcvdSF-_lY61YR8a3ejbcgqNGiyKTxepcY13jEdNXUx9QNo5Miq|5|no|[here](libraries/bmFakeGasenum "library source")
+bmIs| bmIs|1tFa7Gc68142wiiZaNmj0zA-ELDHh0q31eDXodeeCf1LxRR1LeSr3opAd|1|no|[here](libraries/bmIs "library source")
+bmFakeGasenum| bmFakeGasenum|1n-YigdcvdSF-_lY61YR8a3ejbcgqNGiyKTxepcY13jEdNXUx9QNo5Miq|6|no|[here](libraries/bmFakeGasenum "library source")
 ### Enabled Google Services
 no libraries discovered
 ### Scopes required
